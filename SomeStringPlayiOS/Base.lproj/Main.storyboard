@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BI-gV-vml">
+                                <rect key="frame" x="16" y="70" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZV-zC-VSf">
+                                <rect key="frame" x="16" y="145" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a String" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-VK-6Us">
+                                <rect key="frame" x="16" y="41" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter another string " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKo-ie-CsB">
+                                <rect key="frame" x="16" y="116" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-CM-wkf">
+                                <rect key="frame" x="120" y="195" width="136" height="30"/>
+                                <state key="normal" title="Check For Anagram"/>
+                                <connections>
+                                    <action selector="anagramAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tq8-0k-qTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DW-3L-83D">
+                                <rect key="frame" x="124.5" y="241" width="125" height="30"/>
+                                <state key="normal" title="Reverse the string"/>
+                                <connections>
+                                    <action selector="revString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4tD-ZW-byW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tme-J4-4vJ">
+                                <rect key="frame" x="99" y="279" width="177" height="30"/>
+                                <state key="normal" title="Check for email validation"/>
+                                <connections>
+                                    <action selector="emailValidation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jq3-XZ-AaI"/>
+                                    <action selector="revString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBG-vh-Ijc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95764543210939423" green="0.99010055254137319" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eWL-VK-6Us" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8s2-IF-LSR"/>
+                            <constraint firstItem="pKo-ie-CsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ADL-Zr-iwN"/>
+                            <constraint firstItem="8BI-gV-vml" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="AU8-ss-FZn"/>
+                            <constraint firstItem="6DW-3L-83D" firstAttribute="top" secondItem="mDy-CM-wkf" secondAttribute="bottom" constant="16" id="DHC-AC-F4y"/>
+                            <constraint firstItem="zZV-zC-VSf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DoO-om-alu"/>
+                            <constraint firstItem="mDy-CM-wkf" firstAttribute="top" secondItem="zZV-zC-VSf" secondAttribute="bottom" constant="20" id="Gjg-S0-Snp"/>
+                            <constraint firstItem="mDy-CM-wkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JD2-ue-JWq"/>
+                            <constraint firstItem="Tme-J4-4vJ" firstAttribute="top" secondItem="6DW-3L-83D" secondAttribute="bottom" constant="8" id="LDD-fq-fjY"/>
+                            <constraint firstItem="pKo-ie-CsB" firstAttribute="top" secondItem="8BI-gV-vml" secondAttribute="bottom" constant="16" id="SnJ-Sp-UJK"/>
+                            <constraint firstItem="8BI-gV-vml" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="akM-EK-aQy"/>
+                            <constraint firstItem="zZV-zC-VSf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ezL-H7-6cC"/>
+                            <constraint firstItem="zZV-zC-VSf" firstAttribute="top" secondItem="pKo-ie-CsB" secondAttribute="bottom" constant="8" id="ieD-GS-2Ry"/>
+                            <constraint firstItem="eWL-VK-6Us" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="mmS-Vi-hnB"/>
+                            <constraint firstItem="6DW-3L-83D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qMi-CV-hD4"/>
+                            <constraint firstItem="8BI-gV-vml" firstAttribute="top" secondItem="eWL-VK-6Us" secondAttribute="bottom" constant="8" id="uWQ-m6-vk3"/>
+                            <constraint firstItem="Tme-J4-4vJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQ5-T8-Hw3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField1" destination="8BI-gV-vml" id="VuX-UT-CN2"/>
+                        <outlet property="textField2" destination="zZV-zC-VSf" id="bhx-GH-4Sn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
